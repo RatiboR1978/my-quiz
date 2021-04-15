@@ -1,0 +1,35 @@
+.NavPanel{
+    position: fixed;
+    width: 100%;
+    max-width: 150px;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: -235px;
+    background-color: #fff;
+    padding: 40px;
+    transition: left .3s;
+}
+
+.NavPanel.open{
+    left: 0;
+}
+
+.NavPanel ul{
+    padding: 0;
+    margin: 0;
+}
+
+.NavPanel ul li {
+    list-style: none;
+}
+
+.NavPanel a {
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+.NavPanel a:hover {
+    text-decoration: underline;
+}

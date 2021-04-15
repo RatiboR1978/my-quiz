@@ -1,0 +1,15 @@
+.NavigationBtn {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    transition: left .3s;
+    z-index: 100;
+}
+
+.NavigationBtn.close{
+    left: 300px;
+}

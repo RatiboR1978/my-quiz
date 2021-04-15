@@ -1,0 +1,21 @@
+.FinishedQuiz{
+  border: 2px solid white;
+  padding: 20px;
+}
+
+.FinishedText {
+  color: white;
+}
+
+.FinishedTextResult {
+  color: white;
+  font-weight: bolder;
+}
+
+.error {
+  color: red;
+}
+
+.succes {
+  color: green;
+}
