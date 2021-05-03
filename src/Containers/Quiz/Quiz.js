@@ -2,16 +2,12 @@ import React, {Component} from 'react';
 import classes from './Quiz.module.css'
 import ActiveQuiz from "../../Components/ActiveQuiz/ActiveQuiz";
 import FinishedQuiz from "../../Components/FinishedQuiz/FinishedQuiz";
-import NavigationBtn from "../../Components/NavigationBtn/NavigationBtn";
-import NavPanel from "../../Components/NavPanel/NavPanel";
-import ShadowBlock from "../../Components/ShadowBlock/ShadowBlock";
 
 class Quiz extends Component {
   state = {
     endOfQuiz: false,
     answerState: null,
     correctAnswers: 0,
-    isOpenNav: false,
     listQuestions: [
       {
         showQuestion: true,
@@ -97,18 +93,9 @@ class Quiz extends Component {
     }
   }
 
-  toggleHandlerBtn = () => {
-    this.setState({
-        isOpenNav: !this.state.isOpenNav
-    });
-  }
-
   render() {
     return (
       <div className={classes.Quiz}>
-        <NavigationBtn isOpen={this.state.isOpenNav} toggleHandlerBtn={this.toggleHandlerBtn}/>
-        <NavPanel isOpen={this.state.isOpenNav}/>
-        <ShadowBlock isOpen={this.state.isOpenNav} toggleHandlerBlock={this.toggleHandlerBtn}/>
         <div className={classes.QuizWraper}>
           {(this.state.endOfQuiz) ?
             <FinishedQuiz questions={this.state.listQuestions}
