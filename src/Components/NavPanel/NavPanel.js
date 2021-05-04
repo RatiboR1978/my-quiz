@@ -18,7 +18,8 @@ const links = [
 
 class NavPanel extends Component {
   renderLinks() {
-    return links.map((item, i) => <li key={i}><NavLink to={item.link} exact activeClassName={classes.active}>{item.title}</NavLink></li>)
+    return links.map((item, i) => <li key={i}><NavLink to={item.link} exact
+                                                       activeClassName={classes.active}>{item.title}</NavLink></li>)
   }
 
   render() {
