@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
-import Layout from "./hoc/Layout/Layout";
-import Quiz from "./Containers/Quiz/Quiz";
-import {Route, Switch} from "react-router-dom";
-import Auth from "./Containers/Auth/Auth";
-import QuizCreator from "./Containers/QuizCreator/QuizCreator";
-import QuizList from "./Containers/QuizList/QuizList";
+import React, {Component} from 'react'
+import Layout from './hoc/Layout/Layout'
+import {Route, Switch} from 'react-router-dom'
+import Quiz from './containers/Quiz/Quiz'
+import QuizList from './containers/QuizList/QuizList'
+import Auth from './containers/Auth/Auth'
+import QuizCreator from './containers/QuizCreator/QuizCreator'
 
 class App extends Component {
   render() {
@@ -17,8 +17,8 @@ class App extends Component {
           <Route path="/" component={QuizList} />
         </Switch>
       </Layout>
-    );
+    )
   }
 }
 
-export default App;
+export default App

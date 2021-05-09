@@ -1,21 +1,26 @@
-.FinishedQuiz{
-  border: 2px solid white;
-  padding: 20px;
+.FinishedQuiz {
+    padding: 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0 10px;
 }
 
-.FinishedText {
-  color: white;
+.FinishedQuiz ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.FinishedTextResult {
-  color: white;
-  font-weight: bolder;
+.FinishedQuiz ul li i {
+    margin-left: 10px;
+}
+
+.success {
+    color: rgba(161, 240, 69, .7);
 }
 
 .error {
-  color: red;
-}
-
-.succes {
-  color: green;
+    color: rgba(240, 87, 108, .7);
 }
